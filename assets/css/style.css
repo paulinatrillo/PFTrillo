@@ -141,8 +141,15 @@ footer .h4index {
 #contacto h2 {
   font-size: 30px;
   margin: 10px;
-  color: ma;
+  color: darksalmon;
   font-family: "Quicksand", sans-serif;
+}
+#contacto .btn {
+  margin-top: 10px;
+  font-family: "Quicksand", sans-serif;
+  color: darksalmon;
+  position: relative;
+  transition: 2s ease;
 }
 
 header {
