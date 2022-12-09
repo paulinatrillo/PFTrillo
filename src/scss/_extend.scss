@@ -1,0 +1,11 @@
+%button {
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: map-get($estilosTexto , color );
+    position: relative;
+    transition: 2s ease; 
+    &:hover{
+        transform: translate(-10%,-10%) scale(2);
+        opacity: 1;
+    } 
+}

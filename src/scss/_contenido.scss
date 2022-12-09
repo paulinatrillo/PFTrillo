@@ -1,0 +1,40 @@
+#contenido{
+    grid-area: contenido;
+    background-color:darksalmon;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    .quienessomos{
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        margin: 30px; 
+      }
+      .tarjeta{
+        width: 300px;
+        height: 100px;
+        margin: 50px;
+        border: solid rgb(0, 0, 0);
+        border-radius: 8px;
+        padding:10px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        gap:10px;
+        .tarjeta__img{
+            width: 150px;
+            border: solid;
+            border-color: map-get($estilosTexto , color );
+            border-radius: 8px;  
+        }
+        .btn{
+            @extend %button;
+        
+        }
+      }
+    
+}

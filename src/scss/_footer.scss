@@ -1,0 +1,26 @@
+footer{
+    grid-area: footer;
+    background-color:antiquewhite;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    font-family: 'Quicksand', sans-serif;
+    img{
+        display: flex;
+    flex-direction: column;
+    width: 25px;
+    padding: 5px;
+    margin-left: 130px
+    }
+    h4{
+        font-size: 18px;
+    margin-top: 14px;
+    font-family: 'Quicksand', sans-serif;
+    }
+    .h4index{
+        margin-left: 150px;
+        
+    }
+}

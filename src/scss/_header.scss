@@ -1,0 +1,15 @@
+header{
+    grid-area: header;
+    background-color: darkgray;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../img/imgheader-min.jpg);
+    font-family: 'Quicksand', sans-serif;
+    h1, h3 {
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+    }
+    
+}

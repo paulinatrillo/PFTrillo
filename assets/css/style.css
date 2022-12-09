@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  grid-area: nav;
+  background-color: antiquewhite;
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-family: "Quicksand", sans-serif;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 50px;
+  font-size: 18px;
+}
+@media (max-width: 1028px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 750px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 40px;
+}
+nav ul li a:hover {
+  transform: translate(-5%, -5%) scale(1);
+  opacity: 1;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  height: 500px;
+  grid-template-rows: 150px 1fr 1fr 100px;
+  font-family: "Quicksand", sans-serif;
+  grid-template-areas: "nav header header header" "nav contenido contenido contenido" "nav contenido contenido contenido" "nav garantia garantia garantia" "footer footer footer footer";
+}
+@media (max-width: 1028px) {
+  body {
+    grid-template-rows: auto auto auto auto 100px;
+    grid-template-areas: "nav nav nav nav" "header header header header" "contenido contenido contenido contenido" "contenido contenido contenido contenido" "garantia garantia garantia garantia" "footer footer footer footer";
+  }
+}
+
+footer {
+  grid-area: footer;
+  background-color: antiquewhite;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+footer img {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  padding: 5px;
+  margin-left: 130px;
+}
+footer h4 {
+  font-size: 18px;
+  margin-top: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+footer .h4index {
+  margin-left: 150px;
+}
+
+#contenido {
+  grid-area: contenido;
+  background-color: darksalmon;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+#contenido .quienessomos {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin: 30px;
+}
+#contenido .tarjeta {
+  width: 300px;
+  height: 100px;
+  margin: 50px;
+  border: solid rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#contenido .tarjeta .tarjeta__img {
+  width: 150px;
+  border: solid;
+  border-color: darksalmon;
+  border-radius: 8px;
+}
+#contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 60px;
+  font-family: "Quicksand", sans-serif;
+}
+#contacto label {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+#contacto h2 {
+  font-size: 30px;
+  margin: 10px;
+  color: ma;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  grid-area: header;
+  background-color: darkgray;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-image: url(../img/imgheader-min.jpg);
+  font-family: "Quicksand", sans-serif;
+}
+header h1, header h3 {
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+
+#garantia {
+  grid-area: garantia;
+  background-color: darksalmon;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.parrafo {
+  padding: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#contenido .tarjeta .btn {
+  margin-top: 10px;
+  font-family: "Quicksand", sans-serif;
+  color: darksalmon;
+  position: relative;
+  transition: 2s ease;
+}
+#contenido .tarjeta .btn:hover {
+  transform: translate(-10%, -10%) scale(2);
+  opacity: 1;
+}

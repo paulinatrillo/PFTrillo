@@ -1,0 +1,26 @@
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 60px;
+    font-family: "Quicksand", sans-serif;
+    label {
+        font-size: 20px;
+        font-family: "Quicksand", sans-serif;
+      }
+      h2 {
+        font-size: 30px;
+        margin: 10px;
+        color: darksalmon;
+        font-family: "Quicksand", sans-serif;
+      }
+      .btn {
+        @extend %button;
+
+    }
+  }
+
+
+
+
+
