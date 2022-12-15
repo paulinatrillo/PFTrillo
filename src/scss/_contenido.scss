@@ -21,14 +21,14 @@
         border-radius: 8px;
         padding:10px;
         display: flex;
-        flex-direction: row;
         align-items:center;
         justify-content: center;
         gap:10px;
+      }
         .tarjeta__img{
             width: 150px;
             border: solid;
-            border-color: map-get($estilosTexto , color );
+            border-color: darksalmon;
             border-radius: 8px;  
         }
         .btn{
@@ -37,4 +37,3 @@
         }
       }
     
-}

@@ -15,8 +15,7 @@
         font-family: "Quicksand", sans-serif;
       }
       .btn {
-        @extend %button;
-
+        @include button (red,white);
     }
   }
 
