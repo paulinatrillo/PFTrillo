@@ -14,9 +14,11 @@
         color: darksalmon;
         font-family: "Quicksand", sans-serif;
       }
-      .btn {
-        @include button (red,white);
+      .btn2 {
+        @include btn2 (red,white);
+
     }
+    
   }
 
 
