@@ -177,6 +177,9 @@ header h1, header h3 {
   align-items: center;
   font-family: "Quicksand", sans-serif;
 }
+ #garantia .nos{
+    padding: 10px;
+}
 
 @keyframes aparecer {
   0% {
