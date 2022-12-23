@@ -102,6 +102,9 @@ footer .h4index {
   align-items: center;
   font-family: "Quicksand", sans-serif;
 }
+#contenido .cont{
+  color: antiquewhite;
+}
 #contenido .quienessomos {
   width: 200px;
   height: 200px;
@@ -127,6 +130,11 @@ footer .h4index {
   border-color: darksalmon;
   border-radius: 8px;
 }
+#contenido .envios{
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+}
 #contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -135,8 +143,9 @@ footer .h4index {
   font-family: "Quicksand", sans-serif;
 }
 #contacto label {
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Quicksand", sans-serif;
+  color: rgb(0, 0, 0);
 }
 #contacto h2 {
   font-size: 30px;
@@ -146,7 +155,8 @@ footer .h4index {
 }
 #contacto .btn2{
  background-color: darksalmon;
- color: white;
+ color:antiquewhite;
+ font-size: 15px;
  border-radius: 8px;
  margin: 10px;
  padding: 5px;
